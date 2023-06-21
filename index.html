@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eartec</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 20px;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            width: 300px;
+            flex-shrink: 0;
+        }
+        .team-member:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .team-member h2 {
+            margin: 0;
+        }
+        .team-member p {
+            margin: 0;
+            text-align: center;
+        }
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .navigation button {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .navigation button:hover {
+            background-color: #000000;
+        }
+        .project {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .project-card {
+            max-width: 400px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+        }
+        .project-card .description {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .project-card h3 {
+            margin: 0;
+        }
+        .project-card p {
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Equipe Eartec</h1>
+    </header>
+    <div class="navigation">
+        <button id="previousButton" disabled>&lt;</button>
+        <button id="nextButton">&gt;</button>
+    </div>
+    <main id="teamContainer">
+        <div class="team-member">
+            <a href="https://github.com/LuccaQueiroz" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/110744133?v=4" alt="Membro 1">
+            </a>
+            <div>
+                <h2>Lucas Werner</h2>
+                <p>Membro</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/joose2" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/112220253?v=4" alt="Membro 2">
+            </a>
+            <div>
+                <h2>José Helder</h2>
+                <p>Membro</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/MurillooSouza" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/111698916?v=4" alt="Membro 3">
+            </a>
+            <div>
+                <h2>Murillo Souza</h2>
+                <p>Membro</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/HelenMichele" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/112220169?v=4" alt="Membro 4">
+            </a>
+            <div>
+                <h2>Helen Michele</h2>
+                <p>Membro</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/Vivinoow" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/112207673?v=4" alt="Membro 5">
+            </a>
+            <div>
+                <h2>Viviane Pereira</h2>
+                <p>Membro</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/ermogenes" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/14313064?v=4" alt="Membro 6">
+            </a>
+            <div>
+                <h2>Ermogenes Palácio</h2>
+                <p>Orientador de programação</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/diegoneri" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/3936387?v=4" alt="Membro 7">
+            </a>
+            <div>
+                <h2>Diego Néri</h2>
+                <p>Orientador de programação</p>
+            </div>
+        </div>
+        <div class="team-member">
+                <img src="/profilepicturev2.jpg" alt="Membro 8">
+            </a>
+            <div>
+                <h2>Graciete dos Santos</h2>
+                <p>Orientadora de TCC</p>
+            </div>
+        </div>
+    </main>
+    <div class="project">
+        <div class="project-card">
+            <img src="https://etecspgov.sharepoint.com/sites/TCC-EARTEC/Shared%20Documents/General/Design%20sem%20nome%20(2).png" alt="Projeto">
+            <div class="description">
+                <h3>Projeto Fale Direto</h3>
+                <p>O projeto consiste em criar uma ouvidoria para a Etec Adolpho Berezin, onde os alunos, professores e gestores poderão se comunicar de uma forma eficiente e simples. O projeto ainda está em construção e será disponibilizado gratuitamente para livre uso da instituição. Conheça mais sobre:</p>
+                <p>Documentação do projeto:</p>
+                <a href="https://drive.google.com/file/d/1CFP6FklmxJGZgz_AHfKp6nTmAby7Hc5a/view?usp=sharing" target="_blank">Documentação</a>
+                <p>Veja nosso projeto:</p>
+                <a href="https://github.com/LuccaQueiroz/projeto-TCC" target="_blank">Fale Direto</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const teamContainer = document.getElementById('teamContainer');
+        const previousButton = document.getElementById('previousButton');
+        const nextButton = document.getElementById('nextButton');
+        let scrollPosition = 0;
+        const scrollStep = 300;
+        nextButton.addEventListener('click', () => {
+            scrollPosition += scrollStep;
+            teamContainer.scrollTo({
+                top: 0,
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+            updateNavigationButtons();
+        });
+        previousButton.addEventListener('click', () => {
+            scrollPosition -= scrollStep;
+            teamContainer.scrollTo({
+                top: 0,
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+            updateNavigationButtons();
+        });
+        teamContainer.addEventListener('scroll', () => {
+            updateNavigationButtons();
+        });
+        function updateNavigationButtons() {
+            previousButton.disabled = scrollPosition === 0;
+            nextButton.disabled = teamContainer.scrollWidth - teamContainer.clientWidth - scrollPosition === 0;
+        }
+    </script>
+</body>
+</html>
+
+
+
